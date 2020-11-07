@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>Metro Fácil</title>
+</head>
+<body>
+    <header class="contenedor"></header>
+    <main class="principal"> 
+        <form action="" class="register">
+                <img src="./img/MetroFacil-Logo.png" alt="">
+                <label for="dni">
+                    <span class="label-item">Ingresar dni</span>
+                    <input class="label-item" type="text" name="dni" id="dni"  required>
+                </label>
+                <label for="name">
+                    <span class="label-item">Ingresar nombre</span>
+                    <input class="label-item" type="name" name="user" id="user" autocomplete="cc-given-name" required>
+                </label>
+
+                <label for="father-lastname">
+                    <span class="label-item">Ingresar apellido paterno</span>
+                    <input class="label-item" type="name" name="father-lastname" id="father-lastname" autocomplete="cc-family-name " required>
+                </label>
+
+                <label for="mother-lastname">
+                    <span class="label-item">Ingresar apellido materno</span>
+                    <input class="label-item" type="name" name="mother-lastname" id="mother-lastname" autocomplete="additional-name" required>
+                </label>
+
+                <label for="email">
+                    <span class="label-item">Ingresar correo</span>
+                    <input class="label-item" type="email" name="email" id="email" autocomplete="email"required>
+                </label>
+
+                <label for="dateOfBirth">
+                    <span class="label-item">Ingresar fecha de nacimiento</span>
+                    <input class="label-item" type="date" name="dateOfBirth" id="dateOfBirth" required>
+                </label>
+
+                <label for="password">
+                    <span class="label-item">Ingresar contraseña</span>
+                    <input class="label-item" type="password" name="password" id="password" autocomplete="current-password" required>
+                </label>
+
+                <label for="repassword">
+                    <span class="label-item">Reingresar contraseña</span>
+                    <input class="label-item" type="password" name="password" id="repassword" autocomplete="current-password" required>
+                </label>
+
+                <label for="submit">
+                    <input  type="submit" value="Registrate">
+                </label>
+                <a href="/login"> ¿Ya posees una cuenta? Ingresa</a>
+            </form>
+    </main>
+    <footer class="contenedor"></footer>
+</body>
+</html>

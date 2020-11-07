@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Metro Fácil</title>
+</head>
+<body>
+    <header class="contenedor"></header>
+    <main class="principal">
+    
+    
+    	<!-- Aqui es donde se programa la accion del formulario -->
+    	<!-- Es un recurso de ThymeLeaf-->
+    	<!-- Ir a UsuarioController.java -->
+        <form th:action="@{/validarUsuario}" action="/validarUsuario" method="post" class="login">
+                <img src="./img/MetroFacil-Logo.png" alt="">
+                <label for="user">
+                    <span class="label-item">Ingresar usuario</span>
+                    <input class="label-item" type="email" name="username" autocomplete="email" required>
+                </label>
+                <label for="password">
+                    <span class="label-item">Ingresar contraseña</span>
+                    <input class="label-item" type="password" name="password" autocomplete="current-password" required>
+                </label>
+                <label for="submit">
+                   <input  type="submit" value="Iniciar Sesión" >  
+                </label>
+                <a href="/register">¿No posees una cuenta? Registrate</a>
+        </form>
+    </main>
+    <footer class="contenedor"></footer>
+</body>
+</html>

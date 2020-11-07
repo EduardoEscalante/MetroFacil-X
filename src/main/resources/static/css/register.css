@@ -1,0 +1,53 @@
+:root{
+    --primary-color:  rgb(125, 189, 231);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 65.2%;
+}
+body{
+    font-size: 1.6rem;
+}
+.contenedor{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--primary-color);
+}
+.principal{
+    text-align: center;
+    width: 100vw;
+    height: 80vh;
+    display: flex;  /*iMPORTANTE*/
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.register{
+    border: 2px solid var(--primary-color);   
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+}
+.register label{
+    display: block;
+    margin: 6px;
+}
+.label-item{
+    display: inline-block;
+    width: 45%;
+    height: 60%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: var(--primary-color);
+}
